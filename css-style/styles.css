@@ -44,12 +44,6 @@ p {
   margin-bottom: 0;
 }
 
-.btn-box {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 ul {
   list-style: none;
 }
@@ -177,7 +171,7 @@ body {
 .navig:focus {
   color: var(--link);
 }
-.mail-icon {
+.navig__mail-icon {
   width: 16px;
   height: 12px;
   fill: currentColor;
@@ -186,14 +180,14 @@ body {
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
 }
-.tell-icon {
+.navig__tell-icon{
   width: 10px;
   height: 16px;
   fill: currentColor;
   margin-right: 10px;
 }
-.mail-icon:hover,
-.mail-icon:focus {
+.navig__mail-icon:hover,
+.navig__mail-icon:focus {
   fill: var(--link);
 }
 

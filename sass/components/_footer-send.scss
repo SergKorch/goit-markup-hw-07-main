@@ -1,0 +1,86 @@
+.icon-send {
+    fill: var(--primary-background-color);
+    margin-left: 10px;
+    transition-property: fill;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cibic-animation);
+  }
+  .send-block {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .send-footer {
+    display: inline-flex;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--primary-background-color);
+    border-radius: 4px;
+    background-color: var(--footer-background-color);
+  }
+  .send-footer::placeholder {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .button-send {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 12px;
+    font-family: inherit;
+    color: var(--text-hero-footer);
+    background-color: var(--link);
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cibic-animation);
+  }
+  .button-send:hover {
+    color: var(--hero-hover);
+  }
+  .button-send:hover .icon-send {
+    fill: var(--hero-hover);
+  }
+  .send-container {
+    padding-left: 93px;
+  }
+  .icon-chek {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    border: 3px solid black;
+    border-radius: 2px;
+    top: 4.5px;
+    width: 16px;
+    height: 15px;
+    margin-top: 20px;
+  }
+  .text-finish:checked + .icon-chek {
+    top: 4.5px;
+    width: 16px;
+    height: 15px;
+    background-color: var(--link);
+    border-radius: 4px;
+    border-color: var(--link);
+  }
+  
