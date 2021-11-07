@@ -97,7 +97,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.site-nav-contacts {
+.header-contacts {
   display: flex;
   margin-right: 15px;
   margin-left: auto;
@@ -105,14 +105,14 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.site-nav-contacts .navig {
+.heafer-contacts .navig {
   display: flex;
   align-items: center;
 }
-.site-nav-contacts .navigation-header__item + .navigation-header__item {
+.header-contacts .navigation-header__item + .navigation-header__item {
   margin-left: 50px;
 }
-.main-nav {
+.page-header .container {
   display: flex;
   align-items: center;
 }

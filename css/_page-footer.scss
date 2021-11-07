@@ -1,0 +1,43 @@
+// <header class="page-header">
+// <nav class="container">
+//   <a lang="en" href="./index.html" class="logo1"
+//     >Web <span class="logo2">Studio</span></a
+//   >
+//   <ul class="navigation-header">
+//     <li class="navigation-header__item">
+//       <a href="./index.html" class="navigation-header__link">Студия</a>
+//     </li>
+//     <li class="navigation-header__item">
+//       <a href="./portfolio.html" class="navigation-header__link">Портфолио</a>
+//     </li>
+//     <li class="navigation-header__item">
+//       <a href="./index.html" class="navigation-header__link">Контакты</a>
+//     </li>
+//   </ul>
+
+//   <ul class="header-contacts">
+//     <li class="navigation-header__item">
+//       <a href="mailto:info@devstudio.com" class="navig"
+//         ><svg class="mail-icon">
+//           <use href="./images/icons.svg#icon-mail"></use></svg
+//         >info@devstudio.com</a
+//       >
+//     </li>
+//     <li class="navigation-header__item">
+//       <a href="tel:+380961111111" class="navig"
+//         ><svg class="tell-icon">
+//           <use href="./images/icons.svg#icon-phone1"></use></svg
+//         >+38 096 111 11 11</a
+//       >
+//     </li>
+//   </ul>
+// </nav>
+// </header>
+
+.page-header .container {
+    display: flex;
+    align-items: center;
+  }
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
