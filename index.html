@@ -28,7 +28,9 @@
             <a href="./index.html" class="navigation-header__link">Студия</a>
           </li>
           <li class="navigation-header__item">
-            <a href="./portfolio.html" class="navigation-header__link">Портфолио</a>
+            <a href="./portfolio.html" class="navigation-header__link"
+              >Портфолио</a
+            >
           </li>
           <li class="navigation-header__item">
             <a href="./index.html" class="navigation-header__link">Контакты</a>
@@ -55,83 +57,83 @@
     </header>
     <main>
       <section class="section-hero">
-        <div class="section-hero-bg">
+        <div class="section-hero__area">
           <div class="container">
-            <h1 class="section-hero-text">
+            <h1 class="section-hero__text">
               Эффективные решения <br />для вашего бизнеса
             </h1>
-            <button type="button" class="button-hero" data-modal-open>
+            <button type="button" class="section-hero__button" data-modal-open>
               Заказать услугу
             </button>
-            <div class="modalka-bg is-hidden" data-modal>
-              <div class="modalka">
-                <div class="close-area" data-modal-close>
+            <div class="page-modalka is-hidden" data-modal>
+              <div class="modalka-windows">
+                <div class="modalka-windows__close" data-modal-close>
                   <svg
                     data-modal-close
-                    class="icon-close"
+                    class="modalka-windows__icon"
                     width="18"
                     height="18"
                   >
                     <use href="./images/icons.svg#icon-close"></use>
                   </svg>
                 </div>
-                <form class="area-modalka">
-                  <p class="modalka-text">
+                <form class="modalka-info">
+                  <p class="modalka-info__text">
                     Оставьте свои данные, мы вам перезвоним
                   </p>
-                  <label class="form-field">
-                    <span class="text-form-field">Имя</span>
-                    <input class="modal-input" type="text" name="name-modal" />
-                    <svg class="icon-modal" width="18" height="18">
+                  <label class="modalka-info__form">
+                    <span class="modalka-info__name">Имя</span>
+                    <input class="modalka-info__input" type="text" name="name-modal" />
+                    <svg class="modalka-info__icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                   </label>
-                  <label class="form-field">
-                    <span class="text-form-field">Телефон</span>
-                    <input class="modal-input" type="tel" name="tel-modal" />
-                    <svg class="icon-modal" width="18" height="18">
+                  <label class="modalka-info__form">
+                    <span class="modalka-info__name">Телефон</span>
+                    <input class="modalka-info__input" type="tel" name="tel-modal" />
+                    <svg class="modalka-info__icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                   </label>
-                  <label class="form-field">
-                    <span class="text-form-field">Почта</span>
+                  <label class="modalka-info__form">
+                    <span class="modalka-info__name">Почта</span>
                     <input
-                      class="modal-input"
+                      class="modalka-info__input"
                       type="email"
                       name="email-modal"
                     />
-                    <svg class="icon-modal" width="18" height="18">
+                    <svg class="modalka-info__icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                   </label>
-                  <label class="form-field">
-                    <span class="text-form-field">Комментарий</span>
+                  <label class="modalka-info__form">
+                    <span class="modalka-info__name">Комментарий</span>
                     <textarea
                       name="Комментарий"
-                      class="form-comment"
+                      class="modalka-info__comment"
                       placeholder="Введите текст"
                     ></textarea>
                   </label>
-                  <label class="form-field">
+                  <label class="modalka-info__form">
                     <input
-                      class="text-finish"
+                      class="modalka-info__conditions"
                       type="checkbox"
                       name="ok-modal"
                     />
-                    <span class="icon-chek"
+                    <span class="modalka-info__chek"
                       ><svg width="16" height="15">
                         <use
                           href="./images/icons.svg#icon-icon-check-1"
                         ></use></svg
                     ></span>
-                    <span class="agreement-form"
+                    <span class="modalka-info__agreement"
                       >Соглашаюсь с рассылкой и принимаю
-                      <a href="" download>Условия договора</a></span
+                      <a class="modalka-info__download" href="" download>Условия договора</a></span
                     >
                   </label>
                   <button
                     type="submit"
-                    class="button-hero button-modal"
+                    class="modalka-info__button"
                     data-modal-open
                   >
                     Отправить
@@ -415,22 +417,24 @@
           <a lang="en" href="./index.html" class="section-footer__logo"
             >Web<span class="section-footer__logo2">Studio</span></a
           >
-          <address class="section-footer__address">
+          <address class="footer-address">
             <ul class="no-padding-margin-footer">
-              <li class="navigation-header__item">
+              <li class="footer-address__item">
                 <a
                   href="https://goo.gl/maps/JHi3sMc7yfitEbeEA"
-                  class="navig-footer-adress"
+                  class="footer-address__map"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="navigation-header__item">
-                <a href="mailto:info@example.com" class="navig-footer"
+              <li class="footer-address__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-address__contacts"
                   >info@example.com</a
                 >
               </li>
-              <li class="navigation-header__item">
-                <a href="tel:+380991111111" class="navig-footer"
+              <li class="footer-address__item">
+                <a href="tel:+380991111111" class="footer-address__contacts"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -439,28 +443,28 @@
         </div>
         <div>
           <h2 class="social-text-footer">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="social-footer-main">
-            <li class="type-icon-footer">
-              <a href="" class="social-footer-link"
-                ><svg class="social-footer" width="20" height="20">
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
-            <li class="type-icon-footer">
-              <a href="" class="social-footer-link"
-                ><svg class="social-footer" width="20" height="20">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="type-icon-footer">
-              <a href="" class="social-footer-link"
-                ><svg class="social-footer" width="20" height="20">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="type-icon-footer">
-              <a href="" class="social-footer-link"
-                ><svg class="social-footer" width="20" height="20">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
@@ -474,11 +478,11 @@
                 type="email"
                 name="footer-email"
                 placeholder="E-mail"
-                class="send-footer"
+                class="send-block__area"
               />
             </label>
-            <button type="submit" class="button-send">
-              Подписаться<svg class="icon-send" width="24" height="24">
+            <button type="submit" class="send-block__button">
+              Подписаться<svg class="send-block__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>

@@ -5,6 +5,7 @@
       display: flex;
     }
   }
+
 .section-footer {
     padding-bottom: 60px;
     padding-right: 70px;
@@ -25,7 +26,8 @@
 .section-footer__logo2 {
   color: var(--text-hero-footer);
 }
-.section-footer__address {
+
+.footer-address {
     display: block;
     width: 231px;
     height: 81px;
@@ -33,28 +35,88 @@
     margin-right: auto;
     margin-left: 15px;
 }
-.page-footer .logo1 {
-  margin-right: auto;
-  margin-bottom: 20px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  color: var(--style-footer-logo);
+.footer-address--no-padding-margin {
+  margin: 0;
+  padding: 0;
 }
-
-.address .item + .item {
+.footer-address__item {
+  & + & {
     padding-top: 9px;
   }
-  
-
-  .no-padding-margin-footer {
-    margin: 0;
-    padding: 0;
+}
+.footer-address__map {
+  line-height: 1.71;
+  color: var(--text-hero-footer);
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
+  &:hover,
+  &:focus {
+  color: var(--link);
   }
+}
+.footer-address__contacts {
+  color: var(--navig-footer);
+  line-height: 1.71;
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
+  &:hover,
+  &:focus {
+  color: var(--link);
+  }
+} 
 
-  
-  .footer-style .logo1 {
+.social-text-footer {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 72px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+}
+
+.footer-social {
+  display: flex;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-social__item {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  &:not(last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-social__link {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cibic-animation);
+  &:hover,
+  &:focus {
+    background-color: var(--link);
+  }
+}
+.footer-social__icon {
+  fill: var(--primary-background-color);
+}
+
+.logo1 {
+  .page-footer & {
     margin-right: auto;
     margin-bottom: 20px;
     font-family: Raleway;
@@ -62,74 +124,10 @@
     font-weight: bold;
     font-size: 26px;
     color: var(--style-footer-logo);
+    }  
   }
-  
 
-  .navig-footer,
-  .navig-footer-adress {
-    line-height: 1.71;
-    transition-property: color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cibic-animation);
-  }
-  .navig-footer {
-    color: var(--navig-footer);
-  }
-  .navig-footer-adress {
-    color: var(--text-hero-footer);
-  }
-  .navig-footer-adress:hover,
-  .navig-footer:hover {
-    color: var(--link);
-  }
-  /*---------стилизация соц сети футер------------ */
-  .social-text-footer {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 72px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--primary-background-color);
-  }
-  
 
-  .social-footer {
-    fill: var(--primary-background-color);
-  }
-  .type-icon-footer {
-    height: 44px;
-    width: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-  }
-  .social-footer-link:hover,
-  .social-footer-link:focus {
-    background-color: var(--link);
-  }
   
-  .social-footer-main {
-    display: flex;
-    padding-left: 0;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .social-footer-link {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cibic-animation);
-  }
-  .type-icon-footer:not(last-child) {
-    margin-right: 10px;
-  }
+  
   
