@@ -13,15 +13,15 @@
     --time-animation: 250ms;
     --cibic-animation: cubic-bezier(0.4, 0, 0.2, 1);
   }
-@import './components/global-style';
-
+  @import './components/global-style';
   @import './components/page-header';
   @import './components/logo-header';
   @import './components/hero-section';
+  @import './components/modalka';
+  @import './components/recomendation';
   @import './components/comand-list';
   @import './components/page-footer';
   @import './components/page-portfolio';
-  @import './components/modalka';
   @import './components/footer-send';
   
   
