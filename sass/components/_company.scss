@@ -1,17 +1,22 @@
-
-
-
-
-
-  .company {
+.section-company {
+  @extend .container;
+}
+.section-company__title {
+  @extend .section-second__title;
+}
+.section-company__list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.section-company__item {
     display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  
-  .company-icon-img {
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-company__icon {
     fill: #afb1b8;
     width: 172px;
     height: 92px;
@@ -21,15 +26,11 @@
     transition-property: border-color, fill;
     transition-duration: var(--time-animation);
     transition-timing-function: var(--cibic-animation);
-  }
-.company-icon {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+    &:hover,
+    &:focus {
+      fill: var(--link);
+      border-color: var(--link);
+    }
+}
+
   
-  .company-icon-img:hover,
-  .company-icon-img:focus {
-    fill: var(--link);
-    border-color: var(--link);
-  }

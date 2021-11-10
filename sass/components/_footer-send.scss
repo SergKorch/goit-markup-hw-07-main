@@ -1,11 +1,14 @@
-.send-container {
+.send {
   padding-left: 93px;
 }
-.send-block {
+.send__title {
+  @extend .social-text-footer;
+}
+.send__form {
     display: inline-block;
     margin-top: 20px;
 }  
-.send-block__area {
+.send__area {
     display: inline-flex;
     padding-left: 16px;
     width: 358px;
@@ -25,17 +28,17 @@
       color: rgba(255, 255, 255, 0.6);
   }
 }
-.send-block__icon{
+.send__icon{
   fill: var(--primary-background-color);
   margin-left: 10px;
   transition-property: fill;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
-  .send-block__button:hover & {
+  .send__button:hover & {
     fill: var(--hero-hover);
   }
 }
-.send-block__button {
+.send__button {
     display: inline-flex;
     justify-content: center;
     align-content: center;

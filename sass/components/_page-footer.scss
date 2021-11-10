@@ -26,7 +26,6 @@
 .section-footer__logo2 {
   color: var(--text-hero-footer);
 }
-
 .footer-address {
     display: block;
     width: 231px;
@@ -66,7 +65,6 @@
   color: var(--link);
   }
 } 
-
 .social-text-footer {
   display: inline-block;
   font-weight: bold;
@@ -76,7 +74,6 @@
   text-transform: uppercase;
   color: var(--primary-background-color);
 }
-
 .footer-social {
   display: flex;
   padding-left: 0;
@@ -115,17 +112,6 @@
   fill: var(--primary-background-color);
 }
 
-.logo1 {
-  .page-footer & {
-    margin-right: auto;
-    margin-bottom: 20px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    color: var(--style-footer-logo);
-    }  
-  }
 
 
   
