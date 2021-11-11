@@ -1,17 +1,20 @@
-@import './utils/variables.scss';
+  @import './utils/variables';
+
   @import './base/global-style';
-  @import './layout/container';
-  @import './components/page-header';
+
+  @import './layout/page-header';
+  @import './layout/social';
+  @import './layout/page-footer';
+  @import './layout/footer-send';
+
+  @import './components/container';
   @import './components/hero-section';
   @import './components/modalka';
-  @import './layout/section';
+  @import './components/section';
   @import './components/recomendation';
   @import './components/command';
   @import './components/comand-list';
-  @import './components/social.scss';
   @import './components/company';
-  @import './components/page-footer';
-  @import './components/footer-send';
   @import './components/page-portfolio';
 
   
