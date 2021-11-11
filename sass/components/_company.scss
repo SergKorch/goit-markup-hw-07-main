@@ -12,25 +12,23 @@
   margin-right: 15px;
 }
 .section-company__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .section-company__icon {
-    fill: #afb1b8;
-    width: 172px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    padding: 16px 32px 16px 32px;
-    transition-property: border-color, fill;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cibic-animation);
-    &:hover,
-    &:focus {
-      fill: var(--link);
-      border-color: var(--link);
-    }
+  fill: #afb1b8;
+  width: 172px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  transition-property: border-color, fill;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
+  &:hover,
+  &:focus {
+    fill: var(--link);
+    border-color: var(--link);
+  }
 }
-
-  

@@ -14,19 +14,6 @@
   --cibic-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 h1,
 h2,
 h3,
@@ -93,21 +80,6 @@ body {
   transform: scalex(1);
 }
 
-.navigation-header .navigation-header__link {
-  display: block;
-  position: relative;
-  margin: 0;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition-property: color;
-  transition-duration: var(--time-animation);
-  transition-timing-function: var(--cibic-animation);
-}
-
 .navigation-header .navigation-header__link::after {
   content: "";
   position: absolute;
@@ -123,6 +95,10 @@ body {
   transition-timing-function: var(--cibic-animation);
 }
 
+.navigation-header__link:hover, .navigation-header__link:focus {
+  color: var(--link);
+}
+
 .navigation-header .navigation-header__link {
   display: block;
   position: relative;
@@ -138,8 +114,19 @@ body {
   transition-timing-function: var(--cibic-animation);
 }
 
-.navigation-header__link:hover, .navigation-header__link:focus {
-  color: var(--link);
+.navigation-header .navigation-header__link {
+  display: block;
+  position: relative;
+  margin: 0;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
 }
 
 .header-contacts {
@@ -473,6 +460,19 @@ body {
 
 .send__button:hover {
   color: var(--hero-hover);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container, .section-company {
@@ -821,12 +821,12 @@ textarea:focus {
   margin-top: 94px;
 }
 
-.section-second .no-margin {
-  display: flex;
-}
-
 .section-second > .no-margin {
   padding-left: 0;
+}
+
+.section-second .no-margin {
+  display: flex;
 }
 
 .section-second__title, .section-company__title {
